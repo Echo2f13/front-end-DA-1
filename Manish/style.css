@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar nav {
+    background-color: #333;
+}
+
+#nav-bar a {
+    color: white;
+    text-align: center;
+    padding: 23px 71px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#nav-bar a:hover {
+    background-image: linear-gradient(to right, #333, #666);
+    /* padding: 40px 71px; */
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+em,
+li {
+    font-size: 25px;
+}
+
+ul {
+    font-size: 20px;
+
+}
+
+/* h2 {
+    text-decoration: underline solid;
+} */
+
+bold {
+    font-size: 30px;
+}
+
+
+/* =================== */
+
+/* ============recipes page============= */
+
+.nav-bar-logo {
+    width: 90px;
+    height: 85px;
+}
+
+.profile-icon {
+    height: 35px;
+    width: 35px;
+}
+
+/* .profile-icon-a {
+    padding: 0px;
+    
+    } */
+
+.left-padding {
+    padding-left: 20px;
+}
+
+#cuisines-a-img a {
+    padding: 20px;
+}
+
+#cuisines-a-img img:hover {
+    border-color: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(48, 48, 48, 0.777);
+    transform: translateY(-10px);
+}
+
+.recipes-grad {
+    background: linear-gradient(to bottom, antiquewhite, #ffffff);
+}
+
+h1 {
+    font-size: 50px;
+    padding: 50px auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    /* text-decoration: underline solid; */
+}
+
+/* ============profile page============= */
+
+#proflie-card .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* 5px rounded corners */
+    transition: 0.3s;
+    /* display: inline; */
+}
+
+/* On mouse-over, add a deeper shadow */
+#proflie-card .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+#proflie-card .container {
+    padding: 2px 16px;
+}
+
+#proflie-card a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#proflie-card img {
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+    width: 300px;
+}
+
+#proflie-card img:hover {
+    background-color: #33333371;
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+    width: 300px;
+}
+
+.btn {
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* Add a text color */
+    padding: 14px 28px;
+    /* Add some padding */
+    cursor: pointer;
+    /* Add a pointer cursor on mouse-over */
+}
+
+.success {
+    background-color: #04AA6D;
+}
+
+/* Green */
+.success:hover {
+    background-color: #46a049;
+}
+
+.info {
+    background-color: #2196F3;
+}
+
+/* Blue */
+.info:hover {
+    background: #0b7dda;
+}
+
+.warning {
+    background-color: #ff9800;
+}
+
+/* Orange */
+.warning:hover {
+    background: #e68a00;
+}
+
+.danger {
+    background-color: #f44336;
+}
+
+/* Red */
+.danger:hover {
+    background: #da190b;
+}
+
+.default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+/* Gray */
+.default:hover {
+    background: #ddd;
+}
+
+input[type=text],
+input[type=password] {
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* * {
+    box-sizing: border-box;
+} */

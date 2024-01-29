@@ -4,129 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Easy Dishes</title>
 </head>
 
 <body>
 
     <header>
-        <table>
+        <table id="nav-bar">
             <tr>
                 <td rowspan="2">
-                    <img src="logo (2).png" alt="Logo for the website." width="75" height="55">
+                    <img src="logo (2).png" alt="Logo for the website." class="nav-bar-logo">
                 </td>
                 <td>
                     <nav>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\durgas\home.html" style="font-size: 15px;">Home</a>
+                        <a href="..\durgas\home.html">Home</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Manish\recipes.html" style="font-size: 15px;">Recipes</a>
+                        <a href="..\Manish\recipes.html">Recipes</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Kavin\blog.html" style="font-size: 15px;">Blog</a>
+                        <a href="..\Kavin\blog.html">Blog</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Kavin\about-us.html" style="font-size: 15px;">About</a>
+                        <a href="..\Kavin\about-us.html">About</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Karan\login.html" style="font-size: 15px;">Login</a>
+                        <a href="..\Karan\login.html">Login</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Manish\profile.html" style="font-size: 15px;"><img src="..\circle.png" alt="profile"
-                                height="35" width="35"></a>
+                        <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+                                width="35"></a>
                     </nav>
                 </td>
             </tr>
         </table>
-        <hr>
     </header>
 
     <center>
+
         <h1>Main Cuisines</h1>
-        <a href="..\durgas\indiancuisine.html">
-            <img src="indian_cuisine.png" height="300" width="300" alt="Clickable Image">
-        </a>
-        <a href="..\Karan\french.html">
-            <img src="french_cuisine.png" height="300" width="300" alt="Clickable Image">
-        </a>
-        <a href="..\Karan\japanesefood.html">
-            <img src="japanese_cuisine.png" height="300" width="300" alt="Clickable Image">
-        </a>
-        <a href="..\Manish\italian_cuisine.html">
-            <img src="italian_cuisine.png" height="300" width="300" alt="Clickable Image">
-        </a>
+        <div id="cuisines-a-img">
+            <a href="..\durgas\indiancuisine.html">
+                <img src="indian_cuisine.png" height="300" width="300" alt="Clickable Image">
+            </a>
+            <a href="..\Karan\french.html">
+                <img src="french_cuisine.png" height="300" width="300" alt="Clickable Image">
+            </a>
+            <a href="..\Karan\japanesefood.html">
+                <img src="japanese_cuisine.png" height="300" width="300" alt="Clickable Image">
+            </a>
+            <a href="..\Manish\italian_cuisine.html">
+                <img src="italian_cuisine.png" height="300" width="300" alt="Clickable Image">
+            </a>
+        </div>
     </center>
     <br><br>
-    <hr>
-    <center>
-        <h1>General Recipes</h1>
-    </center>
-    <!-- Dish 1: Baked Chicken -->
-    <h2 id="dish1">Baked Chicken</h2>
-    <img src="baked_chicken.jpg" alt="Baked Chicken" height="300" width="300"><br>
-    <em>Ingredients</em>
-    <ul>
-        <li>Chicken pieces</li>
-        <li>Olive oil</li>
-        <li>Garlic powder</li>
-        <li>Paprika</li>
-        <li>Salt</li>
-        <li>Pepper</li>
-        <li>Dried herbs (thyme, rosemary, or oregano)</li>
-    </ul>
-    <em>Steps</em>
-    <ul>
-        <li>Preheat the oven to 400°F (200°C).</li>
-        <li>Place chicken pieces on a baking sheet.</li>
-        <li>Drizzle with olive oil and season with garlic powder, paprika, salt, pepper, and dried herbs.</li>
-        <li>Bake for 25-30 minutes or until the chicken is cooked through and golden brown.</li>
-        <li>Serve hot and enjoy!</li>
-    </ul>
-    <br>
+    <div class="recipes-grad">
 
-    <!-- Dish 2: Vegetable Stir-Fry -->
-    <h2 id="dish2">Vegetable Stir-Fry</h2>
-    <img src="vegetable_stir_fry.jpg" alt="Vegetable Stir-Fry" height="300" width="300"><br>
-    <em>Ingredients</em>
-    <ul>
-        <li>Mixed vegetables (broccoli, bell peppers, carrots, snap peas)</li>
-        <li>Soy sauce</li>
-        <li>Garlic</li>
-        <li>Ginger</li>
-        <li>Sesame oil</li>
-        <li>Cornstarch</li>
-        <li>Vegetable oil</li>
-    </ul>
-    <em>Steps</em>
-    <ul>
-        <li>Heat vegetable oil in a wok or skillet over high heat.</li>
-        <li>Add minced garlic and ginger, stir-fry for 1-2 minutes.</li>
-        <li>Add mixed vegetables and stir-fry until they are tender-crisp.</li>
-        <li>In a bowl, mix soy sauce, sesame oil, and cornstarch. Pour over the vegetables and toss to coat.</li>
-        <li>Cook for an additional 2-3 minutes until the sauce thickens.</li>
-        <li>Serve over rice or noodles.</li>
-    </ul>
-    <br>
+        <center>
+            <h1>General Recipes</h1>
+        </center>
+        <div class="left-padding">
 
-    <!-- Dish 3: Caprese Salad -->
-    <h2 id="dish3">Caprese Salad</h2>
-    <img src="caprese_salad.jpg" alt="Caprese Salad" height="300" width="300"><br>
-    <em>Ingredients</em>
-    <ul>
-        <li>Tomatoes</li>
-        <li>Fresh mozzarella</li>
-        <li>Fresh basil leaves</li>
-        <li>Extra virgin olive oil</li>
-        <li>Balsamic glaze</li>
-        <li>Salt</li>
-        <li>Pepper</li>
-    </ul>
-    <em>Steps</em>
-    <ul>
-        <li>Slice tomatoes and fresh mozzarella into 1/4-inch thick slices.</li>
-        <li>Arrange the tomato and mozzarella slices on a serving platter, alternating and overlapping.</li>
-        <li>Tuck fresh basil leaves between the tomato and mozzarella slices.</li>
-        <li>Drizzle with extra virgin olive oil and balsamic glaze.</li>
-        <li>Season with salt and pepper to taste.</li>
-        <li>Serve as a refreshing salad or appetizer.</li>
-    </ul>
-    <br>
+        <!-- Dish 1: Baked Chicken -->
+        <h2 id="dish1">Baked Chicken</h2>
+        <img src="baked_chicken.jpg" alt="Baked Chicken" height="300" width="300"><br>
+        <em>Ingredients</em>
+        <ul>
+            <li>Chicken pieces</li>
+            <li>Olive oil</li>
+            <li>Garlic powder</li>
+            <li>Paprika</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+            <li>Dried herbs (thyme, rosemary, or oregano)</li>
+        </ul>
+        <em>Steps</em>
+        <ul>
+            <li>Preheat the oven to 400°F (200°C).</li>
+            <li>Place chicken pieces on a baking sheet.</li>
+            <li>Drizzle with olive oil and season with garlic powder, paprika, salt, pepper, and dried herbs.</li>
+            <li>Bake for 25-30 minutes or until the chicken is cooked through and golden brown.</li>
+            <li>Serve hot and enjoy!</li>
+        </ul>
+        <br>
+
+        <!-- Dish 2: Vegetable Stir-Fry -->
+        <h2 id="dish2">Vegetable Stir-Fry</h2>
+        <img src="vegetable_stir_fry.jpg" alt="Vegetable Stir-Fry" height="300" width="300"><br>
+        <em>Ingredients</em>
+        <ul>
+            <li>Mixed vegetables (broccoli, bell peppers, carrots, snap peas)</li>
+            <li>Soy sauce</li>
+            <li>Garlic</li>
+            <li>Ginger</li>
+            <li>Sesame oil</li>
+            <li>Cornstarch</li>
+            <li>Vegetable oil</li>
+        </ul>
+        <em>Steps</em>
+        <ul>
+            <li>Heat vegetable oil in a wok or skillet over high heat.</li>
+            <li>Add minced garlic and ginger, stir-fry for 1-2 minutes.</li>
+            <li>Add mixed vegetables and stir-fry until they are tender-crisp.</li>
+            <li>In a bowl, mix soy sauce, sesame oil, and cornstarch. Pour over the vegetables and toss to coat.</li>
+            <li>Cook for an additional 2-3 minutes until the sauce thickens.</li>
+            <li>Serve over rice or noodles.</li>
+        </ul>
+        <br>
+
+        <!-- Dish 3: Caprese Salad -->
+        <h2 id="dish3">Caprese Salad</h2>
+        <img src="caprese_salad.jpg" alt="Caprese Salad" height="300" width="300"><br>
+        <em>Ingredients</em>
+        <ul>
+            <li>Tomatoes</li>
+            <li>Fresh mozzarella</li>
+            <li>Fresh basil leaves</li>
+            <li>Extra virgin olive oil</li>
+            <li>Balsamic glaze</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+        </ul>
+        <em>Steps</em>
+        <ul>
+            <li>Slice tomatoes and fresh mozzarella into 1/4-inch thick slices.</li>
+            <li>Arrange the tomato and mozzarella slices on a serving platter, alternating and overlapping.</li>
+            <li>Tuck fresh basil leaves between the tomato and mozzarella slices.</li>
+            <li>Drizzle with extra virgin olive oil and balsamic glaze.</li>
+            <li>Season with salt and pepper to taste.</li>
+            <li>Serve as a refreshing salad or appetizer.</li>
+        </ul>
+        <br>
+    </div>
+</div>
 
 </body>
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Italian Cuisine</title>
 </head>
 
@@ -11,33 +12,30 @@
 
     <!-- Header Section -->
     <header>
-        <table>
-          <tr>
-            <td rowspan="2">
-              <img src="logo (2).png" alt="Logo for the website." width="75" height="55">
-            </td>
-            <td>
-              <nav>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\durgas\home.html" style="font-size: 15px;">Home</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Manish\recipes.html" style="font-size: 15px;">Recipes</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Kavin\blog.html" style="font-size: 15px;">Blog</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Kavin\about-us.html" style="font-size: 15px;">About</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Karan\login.html" style="font-size: 15px;">Login</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Manish\profile.html" style="font-size: 15px;"><img src="..\circle.png" alt="profile" height="35"
-                    width="35"></a>
-              </nav>
-            </td>
-          </tr>
+        <table id="nav-bar">
+            <tr>
+                <td rowspan="2">
+                    <img src="logo (2).png" alt="Logo for the website." class="nav-bar-logo">
+                </td>
+                <td>
+                    <nav>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\durgas\home.html">Home</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\Manish\recipes.html">Recipes</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\Kavin\blog.html">Blog</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\Kavin\about-us.html">About</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\Karan\login.html">Login</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+                                width="35"></a>
+                    </nav>
+                </td>
+            </tr>
         </table>
-        <hr>
-      </header>
-        <hr>
     </header>
     <center>
         <img src="italian_cuisine_main.png" alt="Italian Cusine" height="250" width="1500"><br>
@@ -46,146 +44,158 @@
     </center>
 
     <!-- Regional Diversity Section -->
-    <section>
-        <h2>Regional Diversity</h2>
-        <p>Italian cuisine varies significantly from region to region. Each region has its own specialties, ingredients,
-            and cooking techniques. Some famous regional cuisines include Tuscan, Sicilian, Venetian, and Neapolitan.
-        </p>
-    </section>
+    <div class="left-padding recipes-grad">
 
-    <bold>Appetizers</bold>
-    <ol>
-        <li><b>Pasta</b></li>
-        <img src="pasta.jpg" alt="Edamame" height="300" width="300"><br>
-        <em>Ingredients</em>
-        <ul>
-            <li>Pasta</li>
-            <li>Olive oil </li>
-            <li>Garlic</li>
-            <li>Onion</li>
-            <li>Salt</li>
-            <li>Pepper</li>
-            <li>Herbs and spices</li>
-            <li>Parmesan cheese</li>
-            <li>Crushed tomatoes or tomato sauce</li>
-            <li>Salt to taste</li>
-            <li>Optional: Ground meat (beef, pork, or turkey) or vegetables (bell peppers, mushrooms, spinach) for added
-                protein and flavor.</li>
-        </ul>
-        <em>Steps</em>
-        <ul>
-            <li>Cook the pasta according to the package instructions in a pot of salted boiling water until al dente.
-            </li>
-            <li>In a separate pan, heat olive oil over medium heat. Add minced garlic and chopped onions, sauté until
-                they become translucent.</li>
-            <li>If using ground meat, add it to the pan and cook until browned. Drain excess fat if necessary.</li>
-            <li>Pour in crushed tomatoes or tomato sauce, season with salt, pepper, and your choice of herbs and spices.
-                Simmer for about 10-15 minutes to allow the flavors to meld.</li>
-            <li>Drain the cooked pasta and add it to the sauce. Toss to coat the pasta evenly with the sauce.</li>
-            <li>Serve the pasta in bowls, garnished with grated Parmesan cheese and additional herbs, if desired.</li>
-        </ul>
-        <br><br>
+        <section>
+            <h2>Regional Diversity</h2>
+            <p>Italian cuisine varies significantly from region to region. Each region has its own specialties,
+                ingredients,
+                and cooking techniques. Some famous regional cuisines include Tuscan, Sicilian, Venetian, and
+                Neapolitan.
+            </p>
+        </section>
 
-        <li><b>Pizza</b></li>
-        <img src="pizza.jpg" alt="Pizza" height="300" width="300"><br>
-        <em>Ingredients</em>
-        <ul>
-            <li>Pizza dough</li>
-            <li>Tomato sauce</li>
-            <li>Mozzarella cheese</li>
-            <li>Pepperoni slices</li>
-            <li>Olives</li>
-            <li>Mushrooms</li>
-            <li>Bell peppers</li>
-            <li>Italian herbs (oregano, basil)</li>
-            <li>Olive oil</li>
-            <li>Salt and pepper to taste</li>
-            <li>Optional: Sausage, onions, cherry tomatoes, or other favorite toppings</li>
-        </ul>
-        <em>Steps</em>
-        <ul>
-            <li>Preheat your oven to the temperature recommended for your pizza dough.</li>
-            <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
-            <li>Spread a layer of tomato sauce over the dough, leaving a border for the crust.</li>
-            <li>Sprinkle mozzarella cheese over the sauce and add your desired toppings.</li>
-            <li>Drizzle with olive oil and sprinkle with Italian herbs, salt, and pepper.</li>
-            <li>Bake in the preheated oven until the crust is golden and the cheese is melted and bubbly.</li>
-            <li>Remove from the oven, let it cool for a few minutes, slice, and enjoy your homemade pizza!</li>
-        </ul>
-        <br><br>
-        <li><b>Antipasti</b></li>
-        <img src="antipasti.jpg" alt="Antipasti" height="300" width="300"><br>
-        <em>Ingredients</em>
-        <ul>
-            <li>Assorted cured meats (salami, prosciutto, coppa)</li>
-            <li>Various cheeses (mozzarella, provolone, gorgonzola)</li>
-            <li>Olives (green and black)</li>
-            <li>Artichoke hearts</li>
-            <li>Roasted red peppers</li>
-            <li>Marinated mushrooms</li>
-            <li>Grilled zucchini slices</li>
-            <li>Crusty Italian bread or breadsticks</li>
-            <li>Olive oil for drizzling</li>
-            <li>Balsamic vinegar for dipping</li>
-        </ul>
-        <em>Steps</em>
-        <ul>
-            <li>Arrange the cured meats, cheeses, olives, artichoke hearts, roasted red peppers, and other antipasti
-                items on a serving platter.</li>
-            <li>Place slices of crusty Italian bread or breadsticks alongside the antipasti.</li>
-            <li>Drizzle olive oil over the ingredients and serve with a side of balsamic vinegar for dipping.</li>
-            <li>Enjoy the variety of flavors and textures in this classic Italian appetizer!</li>
-        </ul>
-        <br><br>
-        <li><b>Italian Seafood</b></li>
-        <img src="seafood.jpeg" alt="Italian Seafood" height="300" width="300"><br>
-        <em>Ingredients</em>
-        <ul>
-            <li>Assorted seafood (shrimp, mussels, clams, calamari)</li>
-            <li>Garlic, minced</li>
-            <li>Tomatoes, diced</li>
-            <li>White wine</li>
-            <li>Fresh basil</li>
-            <li>Italian parsley, chopped</li>
-            <li>Olive oil</li>
-            <li>Salt and pepper to taste</li>
-            <li>Crushed red pepper flakes (optional for heat)</li>
-            <li>Cooked linguine or spaghetti</li>
-        </ul>
-        <em>Steps</em>
-        <ul>
-            <li>In a large pan, heat olive oil over medium heat and sauté minced garlic until fragrant.</li>
-            <li>Add assorted seafood to the pan and cook until just opaque.</li>
-            <li>Pour in white wine, diced tomatoes, and season with salt, pepper, and optional red pepper flakes. Simmer
-                until the seafood is fully cooked.</li>
-            <li>Toss in cooked linguine or spaghetti, fresh basil, and chopped Italian parsley. Drizzle with additional
-                olive oil if desired.</li>
-            <li>Serve immediately, and savor the delicious flavors of Italian seafood pasta!</li>
-        </ul>
-        <br><br>
-        <li><b>Espresso and Coffee</b></li>
-        <img src="espressojpg.jpg" alt="Espresso and Coffee" height="300" width="300"><br>
-        <em>Ingredients</em>
-        <ul>
-            <li>High-quality espresso coffee beans</li>
-            <li>Filtered water</li>
-            <li>For espresso: Espresso machine</li>
-            <li>For coffee: Drip coffee maker or French press</li>
-            <li>Optional: Milk, sugar, or flavored syrups</li>
-        </ul>
-        <em>Steps</em>
-        <ul>
-            <li>Grind the espresso coffee beans to a fine consistency for espresso or a coarser grind for coffee.</li>
-            <li>Brew espresso using an espresso machine or prepare coffee using a drip coffee maker or French press.
-            </li>
-            <li>For espresso-based drinks, froth milk using the steam wand of the espresso machine.</li>
-            <li>Adjust the strength and sweetness of your coffee by adding milk, sugar, or flavored syrups to taste.
-            </li>
-            <li>Pour the espresso or coffee into your favorite cup, and savor the rich aroma and flavor of Italian
-                coffee!</li>
-        </ul>
+        <bold>Appetizers</bold>
+        <ol>
+            <li><b>Pasta</b></li>
+            <img src="pasta.jpg" alt="Edamame" height="300" width="300"><br>
+            <em>Ingredients</em>
+            <ul>
+                <li>Pasta</li>
+                <li>Olive oil </li>
+                <li>Garlic</li>
+                <li>Onion</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Herbs and spices</li>
+                <li>Parmesan cheese</li>
+                <li>Crushed tomatoes or tomato sauce</li>
+                <li>Salt to taste</li>
+                <li>Optional: Ground meat (beef, pork, or turkey) or vegetables (bell peppers, mushrooms, spinach) for
+                    added
+                    protein and flavor.</li>
+            </ul>
+            <em>Steps</em>
+            <ul>
+                <li>Cook the pasta according to the package instructions in a pot of salted boiling water until al
+                    dente.
+                </li>
+                <li>In a separate pan, heat olive oil over medium heat. Add minced garlic and chopped onions, sauté
+                    until
+                    they become translucent.</li>
+                <li>If using ground meat, add it to the pan and cook until browned. Drain excess fat if necessary.</li>
+                <li>Pour in crushed tomatoes or tomato sauce, season with salt, pepper, and your choice of herbs and
+                    spices.
+                    Simmer for about 10-15 minutes to allow the flavors to meld.</li>
+                <li>Drain the cooked pasta and add it to the sauce. Toss to coat the pasta evenly with the sauce.</li>
+                <li>Serve the pasta in bowls, garnished with grated Parmesan cheese and additional herbs, if desired.
+                </li>
+            </ul>
+            <br><br>
 
-        <br><br>
+            <li><b>Pizza</b></li>
+            <img src="pizza.jpg" alt="Pizza" height="300" width="300"><br>
+            <em>Ingredients</em>
+            <ul>
+                <li>Pizza dough</li>
+                <li>Tomato sauce</li>
+                <li>Mozzarella cheese</li>
+                <li>Pepperoni slices</li>
+                <li>Olives</li>
+                <li>Mushrooms</li>
+                <li>Bell peppers</li>
+                <li>Italian herbs (oregano, basil)</li>
+                <li>Olive oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>Optional: Sausage, onions, cherry tomatoes, or other favorite toppings</li>
+            </ul>
+            <em>Steps</em>
+            <ul>
+                <li>Preheat your oven to the temperature recommended for your pizza dough.</li>
+                <li>Roll out the pizza dough on a floured surface to your desired thickness.</li>
+                <li>Spread a layer of tomato sauce over the dough, leaving a border for the crust.</li>
+                <li>Sprinkle mozzarella cheese over the sauce and add your desired toppings.</li>
+                <li>Drizzle with olive oil and sprinkle with Italian herbs, salt, and pepper.</li>
+                <li>Bake in the preheated oven until the crust is golden and the cheese is melted and bubbly.</li>
+                <li>Remove from the oven, let it cool for a few minutes, slice, and enjoy your homemade pizza!</li>
+            </ul>
+            <br><br>
+            <li><b>Antipasti</b></li>
+            <img src="antipasti.jpg" alt="Antipasti" height="300" width="300"><br>
+            <em>Ingredients</em>
+            <ul>
+                <li>Assorted cured meats (salami, prosciutto, coppa)</li>
+                <li>Various cheeses (mozzarella, provolone, gorgonzola)</li>
+                <li>Olives (green and black)</li>
+                <li>Artichoke hearts</li>
+                <li>Roasted red peppers</li>
+                <li>Marinated mushrooms</li>
+                <li>Grilled zucchini slices</li>
+                <li>Crusty Italian bread or breadsticks</li>
+                <li>Olive oil for drizzling</li>
+                <li>Balsamic vinegar for dipping</li>
+            </ul>
+            <em>Steps</em>
+            <ul>
+                <li>Arrange the cured meats, cheeses, olives, artichoke hearts, roasted red peppers, and other antipasti
+                    items on a serving platter.</li>
+                <li>Place slices of crusty Italian bread or breadsticks alongside the antipasti.</li>
+                <li>Drizzle olive oil over the ingredients and serve with a side of balsamic vinegar for dipping.</li>
+                <li>Enjoy the variety of flavors and textures in this classic Italian appetizer!</li>
+            </ul>
+            <br><br>
+            <li><b>Italian Seafood</b></li>
+            <img src="seafood.jpeg" alt="Italian Seafood" height="300" width="300"><br>
+            <em>Ingredients</em>
+            <ul>
+                <li>Assorted seafood (shrimp, mussels, clams, calamari)</li>
+                <li>Garlic, minced</li>
+                <li>Tomatoes, diced</li>
+                <li>White wine</li>
+                <li>Fresh basil</li>
+                <li>Italian parsley, chopped</li>
+                <li>Olive oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>Crushed red pepper flakes (optional for heat)</li>
+                <li>Cooked linguine or spaghetti</li>
+            </ul>
+            <em>Steps</em>
+            <ul>
+                <li>In a large pan, heat olive oil over medium heat and sauté minced garlic until fragrant.</li>
+                <li>Add assorted seafood to the pan and cook until just opaque.</li>
+                <li>Pour in white wine, diced tomatoes, and season with salt, pepper, and optional red pepper flakes.
+                    Simmer
+                    until the seafood is fully cooked.</li>
+                <li>Toss in cooked linguine or spaghetti, fresh basil, and chopped Italian parsley. Drizzle with
+                    additional
+                    olive oil if desired.</li>
+                <li>Serve immediately, and savor the delicious flavors of Italian seafood pasta!</li>
+            </ul>
+            <br><br>
+            <li><b>Espresso and Coffee</b></li>
+            <img src="espressojpg.jpg" alt="Espresso and Coffee" height="300" width="300"><br>
+            <em>Ingredients</em>
+            <ul>
+                <li>High-quality espresso coffee beans</li>
+                <li>Filtered water</li>
+                <li>For espresso: Espresso machine</li>
+                <li>For coffee: Drip coffee maker or French press</li>
+                <li>Optional: Milk, sugar, or flavored syrups</li>
+            </ul>
+            <em>Steps</em>
+            <ul>
+                <li>Grind the espresso coffee beans to a fine consistency for espresso or a coarser grind for coffee.
+                </li>
+                <li>Brew espresso using an espresso machine or prepare coffee using a drip coffee maker or French press.
+                </li>
+                <li>For espresso-based drinks, froth milk using the steam wand of the espresso machine.</li>
+                <li>Adjust the strength and sweetness of your coffee by adding milk, sugar, or flavored syrups to taste.
+                </li>
+                <li>Pour the espresso or coffee into your favorite cup, and savor the rich aroma and flavor of Italian
+                    coffee!</li>
+            </ul>
+
+    </div>
 
 
 
