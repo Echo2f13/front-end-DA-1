@@ -1,0 +1,182 @@
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: cursive;
+    line-height: 1.6;
+    background-color: #FFDAB9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-color: #FFDAB9;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+.navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+center {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.select-state {
+    margin-bottom: 20px;
+}
+
+
+.menu-image {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.services-table {
+    margin: 0 auto; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.services-table img {
+    display: inline-block; 
+    margin: 0 auto; 
+}
+
+
+
+.enquiry-table {
+    margin-bottom: 20px;
+}
+
+
+.recommendations-table {
+    margin: 0 auto; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.recommendations-table img {
+    display: block;
+    margin: 0 auto; 
+}
+
+
+
+.footer {
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+.footer table {
+    margin-bottom: 10px;
+}
+
+.footer b {
+    font-weight: bold;
+}
+.glitter-text {
+    background: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    background-size: 400%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: glitter 5s infinite;
+    font-size: 36px; 
+}
+
+@keyframes glitter {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+#nav-bar {
+    background-color: #333;
+    width: 100%; 
+}
+
+#nav-bar nav {
+    background-color: #333;
+    
+}
+
+#nav-bar a {
+    color: white;
+    text-align: center;
+    padding: 23px 109px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#nav-bar a:hover {
+    background-image: linear-gradient(to right, #333, #666);
+    padding:22px 109px ;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+em,
+li {
+    font-size: 25px;
+}
+
+ul {
+    font-size: 20px;
+
+}
+
+/* h2 {
+    text-decoration: underline solid;
+} */
+
+bold {
+    font-size: 30px;
+}
+
+.nav-bar-logo {
+    width: 90px;
+    height: 85px;
+}

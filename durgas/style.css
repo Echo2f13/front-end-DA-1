@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-align: center;
+  padding: 23px 109px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+a:hover{
+  background-image: linear-gradient(to right, #333 ,#666);
+  padding:22px 109px ;
+}
+em,li{
+    font-size: 25px;
+}
+ul{
+    font-size: 20px;   
+}
+
+bold{
+    font-size: 30px;
+}
+
+ol img{
+  border-radius: 10%;
+}
+
+.text {
+  transform: scale(0.8);
+  animation: scaleIn 1s forwards;
+}
+
+@keyframes scaleIn {
+  from {
+      transform: scale(0.8);
+  }
+  to {
+      transform: scale(1);
+  }
+}

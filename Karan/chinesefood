@@ -1,0 +1,133 @@
+ Here is a document on Chinese cuisine in a similar format:
+
+<documents>
+<document index="1">
+<source>chinese.txt</source>  
+<document_content><html>
+<head>
+<title>Chinese Cuisine</title>
+</head>
+<body>
+
+<nav>
+<a href="home.html">Home</a>&nbsp;
+<a href="about.html">About</a>&nbsp;  
+<a href="cuisine.html">Cuisine</a>&nbsp;
+<a href="contact.html">Contact</a>
+</nav>
+
+<br>
+
+<img src="chinesefood.jpg" alt="Chinese Cuisine" width="500" height="400">
+
+<h2>Appetizers</h2>
+
+<ol>
+<li>Spring Rolls</li>
+<img src="springrolls.jpg" alt="Spring Rolls" width="200" height="200"><br>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>1 package spring roll wrappers</li>
+<li>1 cup shredded cabbage</li>  
+<li>1 carrot, julienned</li>
+<li>1 cup bean sprouts</li>
+<li>6 oz firm tofu, diced</li>
+<li>2 Tbsp soy sauce</li>
+<li>1 tsp sesame oil</li>
+</ul>
+
+<strong>Steps:</strong>
+<ul>  
+<li>In a bowl, mix vegetables, tofu, soy sauce and sesame oil.</li>
+<li>Place a wrapper on a flat surface and add 2-3 Tbsp filling in a row across the center.</li> 
+<li>Fold sides inward then tightly roll up.</li>
+<li>Fill remaining wrappers with filling.</li>
+<li>In batches, fry spring rolls until crispy.</li>
+</ul>
+
+<li>Wonton Soup</li>
+<img src="wontonsoup.jpg" alt="Wonton Soup" width="200" height="200"><br>
+
+<strong>Ingredients:</strong>  
+<ul>
+<li>1 lb ground pork</li>
+<li>1 tsp grated ginger</li>
+<li>2 Tbsp soy sauce</li> 
+<li>1 egg, beaten</li>
+<li>48 wonton wrappers</li>
+<li>6 cups chicken broth</li>
+<li>4 cups spinach</li>
+<li>1 Tbsp sesame oil</li>
+</ul>
+
+<strong>Steps:</strong>
+<ul>
+<li>In a bowl, mix pork, ginger, soy sauce and egg.</li>
+<li>Place a wonton wrapper on a flat surface. Add 1 tsp pork mixture in the center.</li>
+<li>Wet edges with water and fold over to form a triangle, pressing to seal.</li> 
+<li>Bring broth to a boil in a pot. Add wontons and cook 3 minutes.</li>
+<li>Stir in spinach until wilted. Drizzle with sesame oil.</li>
+</ul>
+</ol>
+
+<h2>Main Courses</h2>
+
+<ol>
+<li>Kung Pao Chicken</li>  
+<img src="kungpao.jpg" alt="Kung Pao Chicken" width="200" height="200"><br>
+
+<strong>Ingredients:</strong>
+<ul>
+<li>2 boneless skinless chicken breasts, diced</li>
+<li>2 Tbsp soy sauce</li>
+<li>2 Tbsp rice vinegar</li>
+<li>1 Tbsp sesame oil</li>
+<li>2 Tbsp vegetable oil</li>
+<li>4 dried chilies, chopped</li>
+<li>1 onion, diced</li>
+<li>2 garlic cloves, minced</li> 
+<li>1 cup roasted peanuts</li>
+</ul>
+
+<strong>Steps:</strong>
+<ul>
+<li>In a bowl, marinate chicken in soy sauce, vinegar and sesame oil for 30 minutes.</li>
+<li>Heat vegetable oil in a wok over high heat. Stir-fry chilies and onions until fragrant.</li>
+<li>Add garlic and stir-fry for 1 minute.</li>
+<li>Add chicken. Stir-fry until browned outside and no longer pink inside.</li>
+<li>Add peanuts and toss to combine.</li>  
+</ul>
+
+<li>Mapo Tofu</li>
+<img src="mapotofu.jpg" alt="Mapo Tofu" width="200" height="200"><br>
+
+<strong>Ingredients:</strong>
+<ul>  
+<li>1 block firm tofu, cubed</li>
+<li>1 Tbsp Sichuan peppercorns</li>
+<li>1 Tbsp vegetable oil</li>
+<li>1 lb ground pork</li>
+<li>1 Tbsp doubanjiang (chili bean paste)</li>
+<li>1 tsp grated ginger</li>
+<li>2 garlic cloves, minced</li>
+<li>2 green onions, chopped</li>
+<li>1/4 cup chicken broth</li>  
+<li>1 tsp sesame oil</li>
+</ul>
+
+<strong>Steps:</strong>
+<ul>
+<li>Grind Sichuan peppercorns into a powder.</li>
+<li>Heat oil in wok over high heat. Add pork and stir-fry until no longer pink.</li>   
+<li>Add doubanjiang, ginger and garlic. Cook 2 minutes.</li>
+<li>Add tofu, green onions, broth and sesame oil. Simmer 2 minutes.</li>
+<li>Remove from heat and garnish with Sichuan pepper powder.</li>
+</ul>
+</ol>
+
+</body>
+</html>
+</document_content>
+</document>
+</documents>

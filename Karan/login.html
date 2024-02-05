@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 ;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #loginForm {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            width: 20%; 
+        }
+        #loginForm h2 {
+            margin-bottom: 20px;
+        }
+        #loginForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #loginForm input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 10px 0; 
+        }
+        #loginForm input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #loginForm input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <table>
-          <tr>
-            <td rowspan="2">
-              <img src="logo (2).png" alt="Logo for the website." width="75" height="55">
-            </td>
-            <td>
-              <nav>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\durgas\home.html" style="font-size: 15px;">Home</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Manish\recipes.html" style="font-size: 15px;">Recipes</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Kavin\blog.html" style="font-size: 15px;">Blog</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Kavin\about-us.html" style="font-size: 15px;">About</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Karan\login.html" style="font-size: 15px;">Login</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Manish\profile.html" style="font-size: 15px;"><img src="..\circle.png" alt="profile" height="35"
-                    width="35"></a>
-              </nav>
-            </td>
-          </tr>
-        </table>
-        <hr>
-      </header>
-        <hr>
-    </header>
-    <center>
 
+    <form id="loginForm" action="/submit_login" method="post">
         <h2>Login Page</h2>
-        <form action="/submit_login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
-            <br>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-            <button><a href="..\Karan\signup.html">sign up</a></button>
-    </center>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Submit">
+        <a href="signup.html">sign up</a>
+    </form>
 
 </body>
-
 </html>

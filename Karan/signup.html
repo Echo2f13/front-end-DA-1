@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Sign Up Form</title>
-</head>
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #signupForm {
+            background-color: white;
+            padding: 20px;
 
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            width: 20%; /* Adjust this value to increase or decrease the width of the form */
+        }
+        #signupForm h2 {
+            margin-bottom: 20px;
+        }
+        #signupForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #signupForm input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        #signupForm button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #signupForm button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
-  <header>
-    <table>
-      <tr>
-        <td rowspan="2">
-          <img src="logo (2).png" alt="Logo for the website." width="75" height="55">
-        </td>
-        <td>
-          <nav>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\durgas\home.html" style="font-size: 15px;">Home</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Manish\recipes.html" style="font-size: 15px;">Recipes</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Kavin\blog.html" style="font-size: 15px;">Blog</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Kavin\about-us.html" style="font-size: 15px;">About</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Karan\login.html" style="font-size: 15px;">Login</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Manish\profile.html" style="font-size: 15px;"><img src="..\circle.png" alt="profile" height="35"
-                width="35"></a>
-          </nav>
-        </td>
-      </tr>
-    </table>
-    <hr>
-  </header>
-  <center>
 
     <form id="signupForm">
-      <h2>Sign Up</h2>
-      <label for="signupUsername">Username:</label>
-      <input type="text" id="signupUsername" name="signupUsername" required>
-      <br><br>
-      <label for="signupPassword">Password:</label>
-      <input type="password" id="signupPassword" name="signupPassword" required>
-      <br><br>
-      <button type="submit">Sign Up</button>
-      <button><a href="..\Karan\login.html">Login</a></button>
-      <!-- <button>Login</button> -->
+        <h2>Sign Up</h2>
+        <label for="signupUsername">Username:</label>
+        <input type="text" id="signupUsername" name="signupUsername" required>
+
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" name="signupPassword" required>
+
+        <button type="submit">Sign Up</button>
+        
     </form>
-  </center>
 
 </body>
-
 </html>

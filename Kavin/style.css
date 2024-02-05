@@ -1,0 +1,184 @@
+ body,h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    line-height: 1.6;
+    background-color: #FFDAB9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+ .header {
+    background-color: rgb(255, 204, 153); /* Peach color */
+    padding: 20px;
+    text-align: center;
+} 
+
+.header img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    overflow: auto; /* Clear float */
+}
+
+img.float-left {
+    float: left;
+    margin-right: 20px; /* Adjust margin to create space between image and text */
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+    clear: both; /* Clear float */
+}
+
+form table {
+    margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgb(255, 204, 153); /* Peach color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+/* Styles for specific sections */
+.about-section p b,
+.about-section p strong {
+    font-weight: bold;
+}
+
+.vision-section p b,
+.vision-section p strong {
+    font-weight: bold;
+}
+
+.mission-section p b,
+.mission-section p strong {
+    font-weight: bold;
+}
+
+.value-section p b,
+.value-section p strong {
+    font-weight: bold;
+}
+
+.clients-section {
+    
+}
+
+.contact-section{
+
+
+ }
+
+ 
+
+#nav-bar {
+    background-color: #333;
+    width: 100%; 
+}
+
+#nav-bar nav {
+    background-color: #333;
+    
+}
+
+#nav-bar a {
+    color: white;
+    text-align: center;
+    padding: 23px 71px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#nav-bar a:hover {
+    background-image: linear-gradient(to right, #333, #666);
+     /*padding: 40px 71px;*/
+}
+
+
+
+em,
+li {
+    font-size: 25px;
+}
+
+ul {
+    font-size: 20px;
+
+}
+
+/* h2 {
+    text-decoration: underline solid;
+} */
+
+bold {
+    font-size: 30px;
+}
+
+.nav-bar-logo {
+    width: 90px;
+    height: 85px;
+}
+.navigation a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
