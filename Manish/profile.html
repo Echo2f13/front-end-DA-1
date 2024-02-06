@@ -6,6 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Profile</title>
+  <style>
+    #loginForm {
+      background: linear-gradient(to bottom, antiquewhite, #ffffff);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      width: 30%;
+    }
+
+    #loginForm h2 {
+      margin-bottom: 20px;
+    }
+
+    #loginForm label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #loginForm input {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin: 10px 0px;
+    }
+
+    #loginForm input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #loginForm input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 
 <body>
@@ -39,32 +81,24 @@
   <!-- User Profile Section -->
   <section>
     <!-- <center> -->
-    <center>
+    <br>
+    <br>
+    <form id="loginForm" method="post" style="margin: auto; width: 30%;">
+      <center>
+        <img src="../circle.png" alt="Avatar">
+        <p><b>Name:</b> John Doe</p>
+        <p><b>DOB:</b> January 1, 1990</p>
+        <p><b>Email:</b> john.doe@example.com</p>
+        <button class="btn warning"><a href="..\Manish\change_password.html">change password</a></button>
+        <!-- <button><a href=""></a>Change Password</button> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="btn danger">Delete Account</button>
+      </center>
+    </form>
 
-
-      <h1>User Profile</h1>
-      <div id="proflie-card">
-        <div class="card">
-          <img src="../circle.png" alt="Avatar">
-          <div class="container">
-            <div>
-              <br>
-              <p><b>Name:</b> John Doe</p>
-              <p><b>DOB:</b> January 1, 1990</p>
-              <p><b>Email:</b> john.doe@example.com</p>
-              <br>
-              <button class="btn warning"><a href="..\Manish\change_password.html">change password</a></button>
-              <!-- <button><a href=""></a>Change Password</button> -->
-              <br>
-              <br>
-              <br>
-              <br>
-              <button class="btn danger">Delete Account</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </center>
     <!-- </center> -->
   </section>
 
