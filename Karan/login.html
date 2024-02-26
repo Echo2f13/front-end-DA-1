@@ -9,15 +9,15 @@
         }
 
         #nav-bar {
-            position: fixed;
+            position: absolute;
             top: 0;
-            right: 0;
+            left: 0;
         }
 
         #nav-bar a {
             color: white;
             text-align: center;
-            padding: 23px 71px;
+            padding: 23px 109px;
             text-decoration: none;
             display: inline-block;
             font-size: 20px;
@@ -86,7 +86,7 @@
     <table id="nav-bar">
         <tr>
             <td rowspan="2">
-                <img src="logo (2).png" alt="Logo for the website." class="nav-bar-logo">
+                <img src="logo (2).png" alt="Logo for the website." class="nav-bar-logo" width="90" height="85">
             </td>
             <td>
                 <nav>
@@ -99,16 +99,15 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="..\Kavin\about-us.html">About</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="..\Karan\login.html">Login</a>
+                    <a id="login" href="..\Karan\login.html">Login</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35" width="35"></a>
+                    <a id="account" href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35" width="35"></a>
                 </nav>
             </td>
         </tr>
     </table>
 
-
-    <form id="loginForm" method="post">
+    <form id="loginForm" action="/submit_login" method="post">
         <h2>Login Page</h2>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
@@ -118,6 +117,25 @@
         <a href="signup.html">sign up</a>
     </form>
 
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var enteredUsername = document.getElementById('username').value;
+            var enteredPassword = document.getElementById('password').value;
+
+            var storedUsername = localStorage.getItem('username');
+            var storedPassword = localStorage.getItem('password');
+
+            if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+                alert('Login successful!');
+                window.location.href = "../durgas/home.html";
+
+            } else {
+                alert('Login failed: Incorrect username or password.');
+            }
+        });
+    </script>
 </body>
 
 </html>

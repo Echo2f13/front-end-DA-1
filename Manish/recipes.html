@@ -58,6 +58,9 @@
 </head>
 
 <body>
+    <div id="loading-screen">
+        <p id="loading-text">Loading...</p>
+    </div>
 
     <header>
         <table id="nav-bar">
@@ -76,9 +79,9 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="..\Kavin\about-us.html">About</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Karan\login.html">Login</a>
+                        <a id="login" href="..\Karan\login.html">Login</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+                        <a id="account" href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
                                 width="35"></a>
                     </nav>
                 </td>
@@ -88,13 +91,11 @@
     <!-- <div style="background-color: white;"> -->
 
     <center>
-
-        <h1 class="intro">
+        <h1 id="main-cuisines" class="intro">
             Main Cuisines</h1>
         <div id="cuisines-a-img">
             <a href="..\durgas\indiancuisine.html">
-                <img src="indian_cuisine.png" height="300" width="300" alt="Clickable Image"
-                    style="border-radius: 25px;">
+                <img src="indian_cuisine.png" height="300" width="300" alt="Clickable Image">
             </a>
             <a href="..\Karan\french.html">
                 <img src="french_cuisine.png" height="300" width="300" alt="Clickable Image">
@@ -112,7 +113,7 @@
     <div class="recipes-grad">
 
         <center>
-            <h1 class="animate-text">General Recipes</h1>
+            <h1 id="general-recipes" class="animate-text">General Recipes</h1>
         </center>
         <div class="left-padding">
 
@@ -231,6 +232,8 @@
         </div>
 
     </footer>
+    <script src="../ultra_main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

@@ -143,7 +143,7 @@ center {
 #nav-bar a {
     color: white;
     text-align: center;
-    padding: 23px 109px;
+    padding: 23px 71px;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
@@ -151,7 +151,7 @@ center {
 
 #nav-bar a:hover {
     background-image: linear-gradient(to right, #333, #666);
-    padding:22px 109px ;
+     /*padding: 40px 71px;*/
 }
 
 body {
@@ -180,3 +180,9 @@ bold {
     width: 90px;
     height: 85px;
 }
+/* Style for the images on hover */
+img:hover {
+    transform: scale(1.1); /* Increase the size of the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+

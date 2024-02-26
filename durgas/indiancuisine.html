@@ -24,9 +24,9 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="..\Kavin\about-us.html">About</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Karan\login.html">Login</a>
+                <a id="login" href="..\Karan\login.html">Login</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+                <a id="account"  href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
                     width="35"></a>
               </nav>
             </td>
@@ -167,8 +167,79 @@
                 crispy.</li>
             <li>Remove the dosa from the pan and serve hot with chutney, sambar, or any desired accompaniment.</li>
         </ul>
-
+        <li id="dish" style="display: none;"></li>
+        <div id="imageDisplay"></div> 
+        <em id="text" style="display: none;">Ingredients</em>
+        <ul id="displayArea"></ul>
+        <em id="text1" style="display: none;">Steps</em>
+        <ul id="displaySteps"></ul>
     </ol>
-</body>
+    <script>
+        function showUserInput(){
+            var UserInput=document.getElementById("UserInput");
+            UserInput.style.display="block";
+        }
 
+        function displayTextAndImage() {
+            var dishname=document.getElementById("dishname").value;
+            var userInput = document.getElementById("userInput").value;
+            var step=document.getElementById("steps").value;
+            var uploadedImage = document.getElementById("imageUpload").files[0];
+            var displayArea = document.getElementById("displayArea");
+            var imageDisplay = document.getElementById("imageDisplay");
+            var dishList = document.getElementById("dish");
+            var newDishItem = document.createElement("li");
+            newDishItem.textContent = dishname;
+            dishList.parentNode.insertBefore(newDishItem, dishList.nextSibling);
+            displayArea.innerHTML = "";
+            displaySteps.innerHTML="";
+            userInput.split('\n').forEach(function(line) {
+                var listItem = document.createElement('li');
+                listItem.textContent = line.trim();
+                displayArea.appendChild(listItem);
+            });
+            step.split('\n').forEach(function(line) {
+                var listItem = document.createElement('li');
+                listItem.textContent = line.trim();
+                displaySteps.appendChild(listItem);
+            });
+            if (uploadedImage) {
+                var reader = new FileReader();
+                reader.onload = function(event) {
+                    var img = new Image();
+                    img.src = event.target.result;
+                    img.alt = "user.jpeg";
+                    imageDisplay.innerHTML = "";
+                    imageDisplay.appendChild(img);
+                };
+                reader.readAsDataURL(uploadedImage);
+            }
+
+            var dh=document.getElementById("dish");
+            dh.style.display="block";
+            var i=document.getElementById("text");
+            i.style.display = "block";
+            var s=document.getElementById("text1");
+            s.style.display = "block";
+            var UserInput = document.getElementById("UserInput");
+            UserInput.style.display = "none";
+        }
+    </script>
+    <input type="button" value="Add your own recipe" onclick="showUserInput()">
+    <form id="UserInput" style="display: none;">
+        Enter the dish name : 
+        <input type="text" id="dishname"><br><br>
+        <h2>Enter the ingredients used in the dish:</h2>
+        <textarea id="userInput" placeholder="Enter the ingredients"></textarea>
+        <br><br>
+        <h2>Enter the steps invloved in the dish:</h2>
+        <textarea id="steps" placeholder="Enter the steps in the dish"></textarea>
+        <br><br>
+        <h2>Upload Image:</h2>
+        <input type="file" id="imageUpload" accept="image/*"><br><br>
+        <button type="button" onclick="displayTextAndImage()">Display Text and Image</button>
+    </form>
+    <script src="../ultra_main.js"></script>
+
+</body>
 </html>

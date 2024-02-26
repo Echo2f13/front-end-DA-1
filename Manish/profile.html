@@ -52,6 +52,10 @@
 
 <body>
 
+  <div id="loading-screen">
+    <p id="loading-text">Loading...</p>
+  </div>
+
   <header>
     <table id="nav-bar">
       <tr>
@@ -69,9 +73,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="..\Kavin\about-us.html">About</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Karan\login.html">Login</a>
+            <a id="login" href="..\Karan\login.html">Login</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35" width="35"></a>
+            <a id="account" href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+                width="35"></a>
           </nav>
         </td>
       </tr>
@@ -95,12 +100,15 @@
         <br>
         <br>
         <br>
-        <button class="btn danger">Delete Account</button>
-      </center>
+        <button id="logoutButton" class="btn danger">logout</button>
+        <br><br>
+        <button id="deleteButton" class="btn danger">Delete Account</button>
     </form>
+    </center>
 
-    <!-- </center> -->
   </section>
+  <script src="../ultra_main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 

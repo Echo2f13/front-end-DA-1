@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="stylesheet" href="style1.css">
   <meta charset="UTF-8">
@@ -8,7 +7,6 @@
   <title>Flavour Fusion</title>
 </head>
 <style>
-  
 .animate-text
 {
    text-transform: uppercase;
@@ -37,9 +35,36 @@
     background-position: 200% center;
   }
 }
-
+.search-container {
+    position: absolute;
+    top: 120px; /* Adjust this value according to your navigation height */
+    right: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #autocomplete-list {
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #autocomplete-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
 </style>
-<body style="background-color: whitesmoke;">
+<body>
   <header>
     <table>
       <tr>
@@ -57,15 +82,93 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="..\Kavin\about-us.html">About</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Karan\login.html">Login</a>
+            <a id="login" href="..\Karan\login.html">Login</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
+            <a id="account"  href="..\Manish\profile.html"><img src="..\circle.png" alt="profile" height="35"
                 width="35"></a>
           </nav>
         </td>
       </tr>
     </table>
   </header>
+  <h2>Theme : </h2>
+  <div class="container">
+    <button class="theme-button" onclick="changeTheme('powderblue')" style="background-color: powderblue;">Light Blue</button>&nbsp
+    <button class="theme-button" onclick="changeTheme('palevioletred')" style="background-color: palevioletred;">Reddish Pink</button>&nbsp
+    <button class="theme-button" onclick="changeTheme('beige')" style="background-color: beige;">Beige</button>
+</div>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search for a dish...">
+  <div id="autocomplete-list"></div>
+</div>
+
+<!-- HTML -->
+<div id="dishDetails"></div>
+
+<!-- JavaScript -->
+<script>
+const dishes = {
+    "Pizza": {
+        ingredients: ["Dough", "Tomato Sauce", "Cheese", "Toppings"],
+        steps: ["Prepare dough", "Spread tomato sauce", "Add cheese and toppings", "Bake in oven"]
+    },
+    "Pasta": {
+        ingredients: ["Pasta", "Tomato Sauce", "Cheese"],
+        steps: ["Boil pasta", "Mix with sauce", "Sprinkle cheese"]
+    },
+    "Lasagna": {
+        ingredients: ["Lasagna noodles", "Ground beef", "Tomato sauce", "Ricotta cheese", "Mozzarella cheese", "Parmesan cheese", "Onion", "Garlic", "Italian seasoning"],
+        steps: ["Cook lasagna noodles", "Brown ground beef with onion and garlic", "Layer noodles, meat sauce, and cheeses in a baking dish", "Bake in oven until bubbly"]
+    },
+    "Chicken Stir-Fry": {
+        ingredients: ["Chicken breast", "Bell peppers", "Broccoli florets", "Soy sauce", "Ginger", "Garlic", "Vegetable oil"],
+        steps: ["Marinate chicken in soy sauce, ginger, and garlic", "Stir-fry chicken and vegetables in a hot pan with oil", "Add sauce and cook until chicken is done"]
+    },
+    "Chocolate Cake": {
+        ingredients: ["Flour", "Sugar", "Cocoa powder", "Baking powder", "Eggs", "Milk", "Butter", "Vanilla extract"],
+        steps: ["Mix dry ingredients in a bowl", "Beat eggs and sugar, add melted butter and vanilla extract", "Combine wet and dry ingredients, pour into pan", "Bake until a toothpick comes out clean"]
+    }
+};
+
+
+const dishNames = Object.keys(dishes);
+
+document.getElementById("searchInput").addEventListener("input", function() {
+    const searchInput = this.value.trim().toLowerCase();
+    const autocompleteList = document.getElementById("autocomplete-list");
+    
+    let matchedDishes = dishNames.filter(dish => dish.toLowerCase().startsWith(searchInput));
+    
+    let optionsHTML = "";
+    matchedDishes.forEach(matchedDish => {
+        optionsHTML += `<li onclick="selectDish('${matchedDish}')">${matchedDish}</li>`;
+    });
+    
+    autocompleteList.innerHTML = optionsHTML ? `<ul>${optionsHTML}</ul>` : "";
+});
+
+function selectDish(dishName) {
+    document.getElementById("searchInput").value = dishName;
+    
+    // Redirect to new page with dish details
+    window.location.href = `dish_details.html?dish=${dishName}`;
+}
+</script>
+<script>
+    var clr;
+    function changeTheme(theme) {
+        if (theme === 'powderblue') {
+            clr = 'powderblue'; 
+        } else if (theme === 'palevioletred') {
+            clr = 'palevioletred'; 
+        } else if(theme === 'beige'){
+            clr = 'beige'; 
+        }
+        document.body.style.backgroundColor = clr;
+    }
+</script>
+
   <center>
     <h1 class="intro">Welcome to Flavour Fusion</h1>
   </center>
@@ -113,6 +216,8 @@
     <span>You can share your receipes only after loginning in.</span>
     <p class="copy">&copy; 2024 Flavour Fusion | All rights reserved</p>
   </footer>
+  <script src="../ultra_main.js"></script>
+
 
 </body>
 

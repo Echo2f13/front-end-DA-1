@@ -1,4 +1,4 @@
-pre {
+pre{
   font-size: 20px;
 }
 
@@ -10,45 +10,35 @@ a {
   font-size: 20px;
 }
 
-a:hover {
-  background-image: linear-gradient(to right, #333, #666);
-  padding: 22px 109px;
+a:hover{
+  background-image: linear-gradient(to right, #333 ,#666);
+  padding:22px 109px ;
 }
 
 .intro {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: hidden;  
   font-size: 28px;
   color: #333;
 }
 
 /* Animation */
 .intro {
-  animation: animated-text 4s steps(25, end) 1s 1 normal both, animated-cursor 600ms steps(20, end) infinite;
+  animation: animated-text 4s steps(25,end) 1s 1 normal both,animated-cursor 600ms steps(20,end) infinite;
 }
 
 /* text animation */
 
-@keyframes animated-text {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 472px;
-  }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
 }
 
 /* cursor animations */
 
-@keyframes animated-cursor {
-  from {
-    border-right-color: transparent;
-  }
-
-  to {
-    border-right-color: transparent;
-  }
+@keyframes animated-cursor{
+  from{border-right-color: transparent;}
+  to{border-right-color: transparent;}
 }
 
 #images img:hover {

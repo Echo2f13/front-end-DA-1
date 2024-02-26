@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Details</title>
+    <style>
+        /* Styles for the loading screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #loading-text {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body style="font-size: large; background-color: beige;">
+    
+
+    <div id="dishDetails"></div>
+
+    <script>
+        const dishes = {
+            "Pizza": {
+                ingredients: ["Dough", "Tomato Sauce", "Cheese", "Toppings"],
+                steps: ["Prepare dough", "Spread tomato sauce", "Add cheese and toppings", "Bake in oven"]
+            },
+            "Pasta": {
+                ingredients: ["Pasta", "Tomato Sauce", "Cheese"],
+                steps: ["Boil pasta", "Mix with sauce", "Sprinkle cheese"]
+            },
+            "Lasagna": {
+                ingredients: ["Lasagna noodles", "Ground beef", "Tomato sauce", "Ricotta cheese", "Mozzarella cheese", "Parmesan cheese", "Onion", "Garlic", "Italian seasoning"],
+                steps: ["Cook lasagna noodles", "Brown ground beef with onion and garlic", "Layer noodles, meat sauce, and cheeses in a baking dish", "Bake in oven until bubbly"]
+            },
+            "Chicken Stir-Fry": {
+                ingredients: ["Chicken breast", "Bell peppers", "Broccoli florets", "Soy sauce", "Ginger", "Garlic", "Vegetable oil"],
+                steps: ["Marinate chicken in soy sauce, ginger, and garlic", "Stir-fry chicken and vegetables in a hot pan with oil", "Add sauce and cook until chicken is done"]
+            },
+            "Chocolate Cake": {
+                ingredients: ["Flour", "Sugar", "Cocoa powder", "Baking powder", "Eggs", "Milk", "Butter", "Vanilla extract"],
+                steps: ["Mix dry ingredients in a bowl", "Beat eggs and sugar, add melted butter and vanilla extract", "Combine wet and dry ingredients, pour into pan", "Bake until a toothpick comes out clean"]
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedDish = urlParams.get('dish');
+        const dish = dishes[selectedDish];
+
+        let detailsHTML = `<h2>${selectedDish}</h2>`;
+        detailsHTML += "<h3>Ingredients:</h3>";
+        detailsHTML += "<ul>";
+
+        dish.ingredients.forEach(ingredient => {
+            detailsHTML += `<li>${ingredient}</li>`;
+        });
+
+        detailsHTML += "</ul>";
+        detailsHTML += "<h3>Steps:</h3>";
+        detailsHTML += "<ol>";
+
+        dish.steps.forEach(step => {
+            detailsHTML += `<li>${step}</li>`;
+        });
+
+        detailsHTML += "</ol>";
+        document.getElementById("dishDetails").innerHTML = detailsHTML;
+    </script>
+    
+    <a href="home.html"><input type="button" value="BACK TO HOME PAGE"></a>
+    <script src="../ultra_main.js"></script>
+
+</body>
+
+</html>

@@ -44,3 +44,9 @@ ol img{
       transform: scale(1);
   }
 }
+
+#imageDisplay img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+}
