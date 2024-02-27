@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Element Dynamically</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <label for="elementType">Add Element</label>
+        <input type="text" id="elementType" name="elementType">
+        <button type="button" onclick="addElement()">Add Element</button>
+    </form>
+    <br>
+    <div id="dynamicElements"></div>
+
+    <script>
+        function addElement() {
+            var eletype = document.getElementById("elementType").value;
+            var eleinput = document.createElement("input");
+            eleinput.setAttribute("type", eletype);
+            document.getElementById("dynamicElements").appendChild(eleinput);
+        }
+    </script>
+
+</body>
+
+</html>

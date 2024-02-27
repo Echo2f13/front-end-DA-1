@@ -51,7 +51,9 @@ function logout() {
     var buttonToRemove = document.getElementById('account');
     if (buttonToRemove) {
         buttonToRemove.remove();
+        buttonToRemove.style.display = 'none';
     }
+    buttonToRemove.style.display = 'none';
     window.location.href = '../Karan/login.html';
 }
 
@@ -69,9 +71,9 @@ function del() {
     localStorage.removeItem('username');
     localStorage.removeItem('password');
     window.location.href = '../Karan/login.html';
-    var buttonToRemove = document.getElementById('account');
-    if (buttonToRemove) {
-        buttonToRemove.remove();
+    var buttonToR = document.getElementById('account');
+    if (buttonToR) {
+        buttonToR.remove();
     }
 }
 
